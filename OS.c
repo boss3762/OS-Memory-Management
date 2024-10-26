@@ -15,9 +15,9 @@ int recursive(int n){
 }
 
 int main(){
-    int *heap1 = malloc(sizeof(int) * 10);
-    int *heap2 = malloc(sizeof(int) * 20);
-    int *heap3 = malloc(sizeof(int) * 30);
+    int *heap1 = malloc(sizeof(int));
+    int *heap2 = malloc(sizeof(int));
+    int *heap3 = malloc(sizeof(int));
     recursive(3);
     printf("global_a: %p\n", &global_a);
     printf("global_b: %p\n", &global_b);
@@ -25,5 +25,6 @@ int main(){
     printf("heap1: %p\n", heap1);
     printf("heap2: %p\n", heap2);
     printf("heap3: %p\n", heap3);
+
 }
 
